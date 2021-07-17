@@ -19,3 +19,8 @@ yarn typeorm migration:run -c <connection>
 # revert
 yarn typeorm migration:revert -c <connection>
 ```
+
+### Run in development environment
+```zsh
+yarn start:dev // or start:debug
+```

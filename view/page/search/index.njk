@@ -1,0 +1,13 @@
+{% extends "page/search/base.njk" %}
+
+{% block content %}
+<div id="search-index">
+  <div class="list-group list-group-flush border-bottom scrollarea">
+  </div>
+</div>
+{% endblock content %}
+
+{% block javascript %}
+{{ super() }}
+<script src="js/page/search/index.js"></script>
+{% endblock javascript %}

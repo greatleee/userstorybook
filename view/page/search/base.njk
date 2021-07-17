@@ -1,0 +1,21 @@
+{% extends "page/base.njk" %}
+
+{% block body %}
+<main>
+  <div class="container">
+    <div class="py-4 d-flex justify-content-center">
+      <div class="input-group mb-3">
+        <input id="search-input" type="text" class="form-control" aria-describedby="search-button">
+        <button id="search-button" class="btn btn-outline-secondary" type="button">검색</button>
+      </div>
+    </div>
+    {% block content %}
+    {% endblock content %}
+  </div>
+</main>
+{% endblock body %}
+
+{% block javascript %}
+<script src="js/page/search/base.js"></script>
+<script src="js/util/index.js"></script>
+{% endblock javascript %}
